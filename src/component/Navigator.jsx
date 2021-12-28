@@ -7,22 +7,6 @@ import {
 } from 'react-icons/ai';
 
 const Navigator = ({ selectTableIndex }) => {
-  //   const moveUp = () => {
-  //     setActiveIndex((prevIndex) => prevIndex - col);
-  //   };
-
-  //   const moveLeft = () => {
-  //     setActiveIndex((prevIndex) => prevIndex - 1);
-  //   };
-
-  //   const moveRight = () => {
-  //     setActiveIndex((prevIndex) => prevIndex + 1);
-  //   };
-
-  //   const moveDown = () => {
-  //     setActiveIndex((prevIndex) => parseInt(prevIndex) + col);
-  //   };
-
   return (
     <div id='navigator'>
       <div id='first' className='block'>

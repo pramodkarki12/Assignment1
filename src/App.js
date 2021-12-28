@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import Form from './component/Form';
 import Table from './component/Table';
 import Navigator from './component/Navigator';
 
 const initialValues = {
-  row: 2,
-  col: 3,
+  row: 5,
+  col: 5,
 };
 
 function App() {
@@ -40,8 +40,11 @@ function App() {
         prevState + col > maxIndex ? prevState : prevState + col
       );
     }
-    console.log(activeIndex);
   };
+
+  useEffect(() => {
+    setActiveIndex(0);
+  }, [row, col]);
 
   return (
     <div id='App'>
