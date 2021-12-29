@@ -17,8 +17,8 @@ function App() {
   const onSubmit = (e) => {
     e.preventDefault();
 
-    setRow(e.currentTarget.elements.row.value);
-    setColumn(e.currentTarget.elements.col.value);
+    setRow(parseInt(e.currentTarget.elements.row.value));
+    setColumn(parseInt(e.currentTarget.elements.col.value));
   };
 
   const selectTableIndex = (value) => {
